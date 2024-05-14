@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script>
+        let MainMusic = new Audio("Assets/menuMusic.mp3");
+            MainMusic.volume = 0.4;
+            MainMusic.loop = true;
+            MainMusic.play();
+    </script>
+</head>
+<body>
+    <div id="aboutWindow" onclick="myGunshotSFX.play()"></div>
+    
+    <div class="centered-box-abt">
+        <h2>ABOUT PAGE</h2>
+        <p class="abtText">There are bad guys who are trying to
+            to kill you, and have cornered you in this
+            dark alley way. Your goal is to shoot your
+            way out to safety.
+        </p>
+        <p class="abtText">
+            Be careful, if you run out of health and die,
+            you'll begin at the beginning of the first 
+            level. Good luck in your fight!
+        </p>
+    </div>
+
+
+    <!-- <p>About the game...</p> -->
+</body>
+</html>

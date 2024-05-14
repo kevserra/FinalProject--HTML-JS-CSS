@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" id="blink">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="index.js"></script>
+</head>
+
+<body onload="newGameStart()">
+    <div>
+        <img id="game-over" src="https://i.ytimg.com/vi/-vxgRKMOJlI/maxresdefault.jpg" width="100%" height="100%">
+    </div>
+    <div id="game-over-overlay">
+        <div id="gameWindow" onclick="myGunshotSFX.play()">
+            <div class="w3-border">
+                <div id="healthBar" class="w3-green" style="height:24px"></div>
+            </div>
+            <div class="enemies" id="enemy1" onclick="userFire(this)"></div>
+            <div class="enemies" id="enemy2" onclick="userFire(this)"></div>
+            <div class="enemies" id="enemy3" onclick="userFire(this)"></div>
+            <div class="enemies" id="enemy4" onclick="userFire(this)"></div>
+            <div class="enemies" id="enemy5" onclick="userFire(this)"></div>
+            <div class="enemies" id="enemy6" onclick="userFire(this)"></div>
+        </div>
+
+        <div id="instBorder" class="instructions">
+            <p>
+                Instructions:
+                <br><br><br>
+                Aim & click to kill the enemies<br>
+                popping up, <br>
+                Do so quick, for each <br>
+                delay comes with the <br>
+                consequence of being <br>
+                shot back! <br>
+                <br><br>
+                If the green bar at the <br>
+                top of the screen indicating <br>
+                your health points, reaches <br>
+                zero, you will have been <br>
+                killed and required to <br>
+                start over! <br>
+                <br><br>
+                GOOD LUCK!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!--TO DO LIST-->
+<!-- 
+-sort of a main menu
+-each level, enemies need more clicks to die
+-each level, enemies shoot x2 (either speed or dmg)
+-red (fade in) opacity screen when you reach 0 hp
+-button in gameWindow to restart after death (not just browser alert)
+...
+-->
